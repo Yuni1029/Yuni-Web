@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS Application Survey</title>
+    <link href="SurveyForm.css" rel="stylesheet">
+    <link rel="icon" href="BlueSurveyicon.png">
+</head>
+<body>
+    <div class='Title'>
+        <h1>Survey for ○○○ SNS application users</h1>
+        <h2>Let us know how we can improve our app! <br>Please fill in the survey carefully.<br></h2>
+    </div>
+    <div id="Context">
+        <div class='Username'>
+            <label for="Username id"><h4>Username id</h4></label>
+            <input id="Username id" type="text" name="Username id">
+        </div>
+        <div class='Password'>
+            <label for="Password"><h4>Password</h4></label>
+            <input id="Password" type="password" name="password">
+        </div>
+        <div class='Age'>
+            <label for="Age"><h4>Age</h4></label>
+            <input id="Age" type="number" name="age" step="1">
+        </div>
+        <div class='Gender'>
+            <label for="Gender"><h4>Gender</h4></label>
+            <select id="Gender" name="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Intersex">Intersex</option>
+                <option value="Trans">Trans</option>
+                <option value="Non-Conforming">Non-Conforming</option>
+            </select>
+        </div>
+        <div class='job'>
+            <label for="Job"><h4>Job</h4></label>
+            <input it="job" type="text" name="job">
+        </div>
+        <div class='location'>
+            <label for="Location"><h4>Location</h4></label>
+            <input type="text" list="cities" id="Location">
+            <datalist id="cities">
+                <option value="LA"></option>
+                <option value="Beijing"></option>
+                <option value="New York"></option>
+                <option value="Cairo"></option>
+                <option value="Tokyo"></option>
+                <option value="Mumbai"></option>
+                <option value="Sao Paulo"></option>
+                <option value="Mexico city"></option>
+                <option value="Shanghai"></option>
+                <option value="Seoul"></option>
+                <option value="Bangkok"></option>
+            </datalist>
+        </div>
+        <div class='UseTime'>
+            <h4>How often do you use our app?</h4>
+            <div class='choices'>
+                <br>
+                <label for="Daily">Daily</label>
+                <input id="Daily" name="Use Time" type="radio" value="Daily">
+                <br>
+
+                <br>
+                <label for="A few times a week">A few times a week</label>
+                <input id="A few times a week" name="Use Time" type="radio" value="A few times a week">
+                <br>
+
+                <br>
+                <label for="Once a week">Once a week</label>
+                <input id="Once a week" name="Use Time" type="radio" value="Once a week">
+                <br>
+
+                <br>
+                <label for="A few times a month">A few times a month</label>
+                <input id="A few times a month" name="Use Time" type="radio" value="A few times a month">
+                <br>
+
+                <br>
+                <label for="Once a month">Once a month</label>
+                <input id="Once a month" name="Use Time" type="radio" value="Once a month">
+            </div>
+        </div>
+        <div class='frictions'>
+            <h4>What points of friction have you encountered while using the app? <br>(Check all that apply)<br></h4>
+            <div>
+                <br>
+                <label for="Character limit">Character limit</label>
+                <input id="Character limit" name="frictions" type="checkbox" value="Character limit">
+                <br>
+
+                <br>
+                <label for="Lack of privacy">Lack of privacy</label>
+                <input id="Lack of privacy" name="frictions" type="checkbox" value="Lack of privacy">
+                <br>
+
+                <br>
+                <label for="Sudden delays">Character limit</label>
+                <input id="Sudden delays" name="frictions" type="checkbox" value="Sudden delays">
+                <br>
+
+                <br>
+                <label for="Hacked accounts">Hacked accounts</label>
+                <input id="Hacked accounts" name="frictions" type="checkbox" value="Hacked accounts">
+                <br>
+
+                <br>
+                <label for="etc">Etc (please write at the comment box below!)</label>
+                <input id="etc" name="frictions" type="checkbox" value="etc">
+                <br>
+            </div>
+        </div>
+        <div class='Improvement'>
+            <h4>What would you improve if you could? (Check all that apply)</h4>
+
+            <div class='list'>
+                <br>
+                <label for="Searching Multiple Tags">Searching Multiple Tags</label>
+                <input id="Searching Multiple Tags" name="Improvement" type="checkbox" value="Searching Multiple Tags">
+                <br>
+
+                <br>
+                <label for="Tracking Mentions">Tracking Mentions</label>
+                <input id="Tracking Mentions" name="Improvement" type="checkbox" value="Tracking Mentions">
+                <br>
+
+                <br>
+                <label for="Re-Posting Photos">Re-Posting Photos</label>
+                <input id="Re-Posting Photos" name="Improvement" type="checkbox" value="Re-Posting Photos">
+                <br>
+
+                <br>
+                <label for="Upload from a Non-Mobile Device">Upload from a Non-Mobile Device</label>
+                <input id="Upload from a Non-Mobile Device" name="Improvement" type="checkbox" value="Upload from a Non-Mobile Device">
+                <br>
+
+                <br>
+                <label for="etc">Etc (please write at the comment box below!)</label>
+                <input id="etc" name="Improvement" type="checkbox" type="text" value="etc">
+                <br>
+            </div>
+        </div>
+        <div class='Satisfication'>
+            <h4>On a scale of 0 to 10, how satisfied are you with your ○○○ app experience today?</h4>
+
+            <label for="satisfaction"></label>
+            <input type="range" value="10" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+            <output>10</output>
+        </div>
+        <div class='comments'>
+            <h4>Do you have any additional comments or feedback for us?</h4>
+
+            <label for="comments"></label>
+            <textarea id="comments" name="comments" rows="10" cols="60"></textarea>
+        </div>
+        <div class='thank'>
+            <h5>Thank you for sharing your valuable time for us!</h5>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
