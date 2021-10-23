@@ -1,0 +1,22 @@
+#title {
+    border: 4px solid cornflowerblue;
+    background-color: cornflowerblue;
+    position: fixed;
+    width:100%;
+    text-align: center;
+    top:-19px;
+    right:2px;
+}
+
+#Submit-Order {
+    text-align: center;
+    border:2px solid cornflowerblue;
+    background-color: cornflowerblue;
+    width:500px;
+    margin-left:500px;
+}
+
+iframe {
+    margin-right:500px;
+}
+

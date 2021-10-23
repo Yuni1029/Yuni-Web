@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link href="Third-page.css" rel="stylesheet">
+    <link rel="icon" href="123order.png"/>
+</head>
+<body>
+    <p id="title"> Your Cart </p>
+
+    <div id="Address">
+        <h2> •Address </h2>
+        
+        <select id="request" name="request">
+        <option value="1">Deliver to door</option>
+        <option value="2">Call before arrival</option>
+        <option value="3">No Request</option>
+        </select>
+
+        <br>
+
+        <label for="city"> <p> Search for your address: </p></label>
+        <input type="text" list="cities" id="city">
+        <datalist id="cities">
+            <option value="LA"></option>
+            <option value="New York"></option>
+            <option value="Chicago"></option>
+            <option value="Houston"></option>
+            <option value="Phoenix"></option>
+            <option value="Philadelphia"></option>
+            <option value="San Antonio"></option>
+            <option value="San Diego"></option>
+            <option value="Dallas"></option>
+        </datalist>
+
+        <input type="button" value="Submit">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26016650.97640762!2d-98.82906249999998!3d37.251012038560006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2z66-46rWt!5e0!3m2!1sko!2skr!4v1634775082622!5m2!1sko!2skr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+
+    <hr>
+
+    <div>
+        <h2> •Cost</h2>
+        <label for="number-options"><h4> 1955 Smoky Double Bacon</h4> </label>
+        <select id="options" name="options">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+            <option value="6"> 6 </option>
+            <option value="7"> 7 </option>
+            <option value="8"> 8 </option>
+            <option value="9"> 9 </option>
+            <option value="10+"> 10+ </option>
+        </select>
+        <p class="cost"> $5</p>
+    </div>
+
+    <div>
+        <h4> Fries </h4>
+        <p class="cost"> $1 </p>
+    </div>
+
+    <div>
+        <h4> Delivery Fee</h4>
+        <p class="cost"> $15 </p>
+    </div>
+
+    <hr style="border: 1px dashed rgb(130, 130, 130);"/>
+
+    <div>
+        <h2> Total </h2>
+        <p> $21 </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <label for="payment-options"><h2> •Payment Options:</h2> </label>
+        <select id="options" name="options">
+            <option value="1"> Credit </option>
+            <option value="2"> Mobile Payment </option>
+            <option value="3"> Naver Pay </option>
+            <option value="4"> Kakao Pay </option>
+        </select>
+        <p></p>
+    </div>
+
+    <hr>
+
+    <div>
+        <label for="surname"> Your Name (optional): </label>
+        <input id="surname" type="text" name="surname">
+
+        <br>
+        <p></p>
+        
+        <label for="phone">Your Phone Number (optional):</label>
+        <input type="tel" id="phone" name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <small>Format: 123-456-7890</small>
+    </div>
+
+    <div id="Submit-Order"> 
+        <h3> ORDER!</h3>
+    </div>
+
+
+</body>
+</html>
