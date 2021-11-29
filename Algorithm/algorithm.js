@@ -6,10 +6,10 @@ let addition = y (2, 3)
 console.log(addition)
 
 //question 2
-function Area(π, r) {
-    return(π*r*r)
+function Area(r) {
+    return(3.14*r*r)
 }
-let Circle = Area(3.14,3)
+let Circle = Area(3)
 console.log(Circle)
 
 //question 3
