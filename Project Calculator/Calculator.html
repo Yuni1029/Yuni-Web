@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h3 id="Title"> </h3>
+    <p id="firstValue"></p>
+    <input type="text" id="firstV" step="1"/>
+    <p id="secondValue"></p>
+    <input type="text" id="secondV" step="1"/>
+    <br>
+    <!-- <input type="button" value="Result" onclick="cal()"/> -->
+    <button id="button" value="Result" onclick="cal()"> Result </button>
+    <br>
+    <input type="text" id="sub" readonly="readonly"/>
+
+    <script>
+        document.getElementById("Title").innerHTML = "Calculator"
+        document.getElementById("firstValue").innerHTML = "Enter First Value"
+        document.getElementById("secondValue").innerHTML = "Enter Second Value"
+
+        function cal() {
+            let firstV = Number(document.querySelector("#firstV").value);
+            let secondV = Number(document.querySelector("#secondV").value);
+            let sub = firstV - secondV;
+            document.getElementById("sub").value = sub;
+        }
+    </script>
+
+</body>
+</html>
