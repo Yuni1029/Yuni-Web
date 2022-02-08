@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link href="Cstyle.css" rel="stylesheet">
+</head>
+<body>  
+    <div id="Body">
+        <h1 id="Title"> </h1>
+
+        <span id="count"> 0 </span>
+
+        <br>
+
+        <button id="buttonA" onclick="decreaseOne()">
+            DOWN
+        </button>
+        <button id="buttonB" onclick="addOne()">
+            UP
+        </button>
+        
+        <br>
+
+        <button id="buttonC" onclick="reset()">
+            RESET
+        </button>
+
+        
+    </div>
+
+    <script>
+        document.getElementById("Title").innerHTML = "Counter"
+
+        let number = 0;
+
+        function addOne() {
+            number++;
+            document.getElementById("count").innerHTML = number;
+        }
+
+        function decreaseOne() {
+            number--;
+            document.getElementById("count").innerHTML = number;
+        }
+
+        function reset() {
+            number=0;
+            document.getElementById('count').innerHTML = 0;
+        }
+
+    </script>
+</body>
+</html>
