@@ -39,16 +39,19 @@
         function addOne() {
             number++;
             document.getElementById("count").innerHTML = number;
+            document.getElementById("count").style.color = "red";
         }
 
         function decreaseOne() {
             number--;
             document.getElementById("count").innerHTML = number;
+            document.getElementById("count").style.color = "blue";
         }
 
         function reset() {
             number=0;
             document.getElementById('count').innerHTML = 0;
+            document.getElementById("count").style.color = "black";
         }
 
     </script>
